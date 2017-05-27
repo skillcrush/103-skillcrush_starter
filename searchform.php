@@ -1,6 +1,6 @@
 <?php
 /**
-* The default template for displaying content
+* Template for displaying search forms
 *
 * @link http://codex.wordpress.org/Template_Hierarchy
 *

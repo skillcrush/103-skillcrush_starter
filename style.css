@@ -1,8 +1,8 @@
 /*
-Theme Name: Skillcrush Starter Theme -- Final Theme / 10 Featured Image Challenge
+Theme Name: Skillcrush Starter Theme -- FINAL MASTER, including Bonus Challenge notes
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
-Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding a call for post thumbnails to the content.php and content-blog.php files.
+Description: This theme is for use in Skillcrush 103.
 Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -66,13 +66,13 @@ table {
 /** Clearfix **/
 .clearfix:before,
 .clearfix:after {
-     content: " ";
-     display: table;
-      table-layout: fixed;
+	content: " ";
+	display: table;
+	table-layout: fixed;
 }
 
 .clearfix:after {
-     clear: both;
+	clear: both;
 }
 /** end CSS reset **/
 
@@ -296,6 +296,9 @@ body {
 	text-indent: 2em;
 	margin-bottom: 1em;
 }
+#main {
+	margin-bottom: 2.3125em;
+}
 .main-content {
 	vertical-align: top;
 	padding: 2em 0 0 0;
@@ -344,9 +347,6 @@ body {
 		-o-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 		background: #eeeeee;
-	}
-	#main {
-		margin-bottom: 2.3125em;
 	}
 	#main section {
 		display: -webkit-box;
@@ -819,3 +819,31 @@ body {
 	}
 }
 /* End HOMEPAGE STYLES */
+
+/* ADDITIONAL STYLES */
+#sidebar .widget-title {
+	font: 700 .875em/1.75 'OpenSans', Arial, sans-serif;
+	color: #45ac9d;
+	margin: 0 auto 1.25em;
+}
+#sidebar .popular-posts ul li {
+	font: 600 .875em/1.5 'OpenSans', Arial, sans-serif;
+	color: #3b3b3b;
+	margin-bottom: 1em;
+}
+#sidebar .popular-posts ul li a {
+	color: #3b3b3b;
+}
+.author .page-title, .search .page-title {
+	font: 700 1.5em/2 'Montserrat', 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.034em;
+	margin: 0;
+}
+.author .page-title span, .search .page-title span {
+	color: #45ac9d;
+	text-transform: capitalize;
+}
+.no-sidebar {
+
+}
+/* End ADDITIONAL STYLES */

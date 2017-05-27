@@ -19,7 +19,7 @@ get_header(); ?>
 	<div class="main-content">
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php get_template_part( 'content-blog', get_post_format() ); ?>   <!-- Bonus challenge, change this to content-blog to match design -->
 			<?php endwhile; ?>
 		<?php else: ?>
 			<article>

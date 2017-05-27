@@ -16,7 +16,7 @@
 			<div class="entry-meta">
 				<h3 class="entry-time"><?php echo get_the_date(); ?></h3>
 			</div>
-			<h2 class="entry-title"><?php the_title(); ?></h2>
+			<h2 class="entry-title"><?php the_title(); ?></h2>		<!-- Removed the call for the permalink once we swapped content-blog for content in index.php -->
 		</header>
 		<div class="entry-summary">
 			<?php if ( has_post_thumbnail() ) : ?>
