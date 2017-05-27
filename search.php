@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Category pages
+ * The template for displaying search results
  *
  * @package WordPress
  * @subpackage Skillcrush_Starter
@@ -11,16 +11,16 @@ get_header(); ?>
 
 <?php if ( have_posts() ): ?>
 	<header class="page-header">
-		<h1 class="page-title"><?php printf( __( 'Posts categorized as <span>%s</span>', 'skillcrushstarter' ), single_cat_title( '', false ) ); ?></h1>
+		<h1 class="page-title"><?php printf( esc_html__( 'Search results for %s', 'skillcrushstarter' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 	</header>
 <?php endif; ?>
 
-<section class="category-page">
+<section class="search-page">
 	<div class="main-content">
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content-blog', get_post_format() ); ?>   <!-- Bonus challenge, change this to content-blog to match design -->
-			<?php endwhile; ?>
+				<?php get_template_part( 'content-blog', get_post_format() ); ?>
+			<?php endwhile ?>
 		<?php else: ?>
 			<article>
 				<h4>No posts found!</h4>

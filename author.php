@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Category pages
+ * The template for displaying Author post list pages
  *
  * @package WordPress
  * @subpackage Skillcrush_Starter
@@ -9,18 +9,19 @@
 
 get_header(); ?>
 
+<?php $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
 <?php if ( have_posts() ): ?>
 	<header class="page-header">
-		<h1 class="page-title"><?php printf( __( 'Posts categorized as <span>%s</span>', 'skillcrushstarter' ), single_cat_title( '', false ) ); ?></h1>
+		<h1 class="page-title">Posts by <span class="author-name"><?php echo $curauth->display_name; ?></span></h1>
 	</header>
 <?php endif; ?>
 
-<section class="category-page">
+<section class="author-page">
 	<div class="main-content">
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content-blog', get_post_format() ); ?>   <!-- Bonus challenge, change this to content-blog to match design -->
-			<?php endwhile; ?>
+				<?php get_template_part( 'content-blog', get_post_format() ); ?>
+			<?php endwhile ?>
 		<?php else: ?>
 			<article>
 				<h4>No posts found!</h4>
