@@ -1,8 +1,8 @@
 /*
-Theme Name: Skillcrush Starter Theme -- 06 Single Blog Posts and Fix the Loop Challenge
+Theme Name: Skillcrush Starter Theme -- 07 Pages Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
-Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the category.php file from the previous "Fix the loop" challenge, adding the single.php and comments.php files, adding the "custom markup for post comments" function to the functions.php file, adding SINGLE POST STYLES to the style.css file.
+Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the page.php file and an optional full-width.php file (inside a custom-template folder), adding PAGE STYLES and CUSTOM TEMPLATE STYLES  to style.css file.
 Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -344,9 +344,6 @@ body {
 		-o-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 		background: #eeeeee;
-	}
-	#main {
-		margin-bottom: 2.3125em;
 	}
 	#main section {
 		display: -webkit-box;
@@ -713,3 +710,18 @@ body {
 	float: right;
 }
 /* End SINGLE POST STYLES */
+
+/* PAGE STYLES and CUSTOM TEMPLATE STYLES*/
+.page .entry-title {
+	font-weight: 500;
+	text-align: center;
+    border-bottom: 0.07em solid #45ac9d;
+    padding-bottom: .5em;
+}
+.page-template-full-width .page-header {
+	border-bottom: none;
+}
+.page-template-full-width .entry-title {
+	font-size: 2.5em;
+}
+/* End PAGE STYLES */
