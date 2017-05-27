@@ -1,8 +1,8 @@
 /*
-Theme Name: Skillcrush Starter Theme -- 07 Pages Challenge
+Theme Name: Skillcrush Starter Theme -- 08 Custom Homepage Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
-Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the page.php file and an optional full-width.php file (inside a custom-template folder), adding PAGE STYLES and CUSTOM TEMPLATE STYLES  to style.css file.
+Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the front-page.php file and an img folder, adding HOMEPAGE STYLES to style.css file.
 Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -344,6 +344,9 @@ body {
 		-o-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 		background: #eeeeee;
+	}
+	#main {
+		margin-bottom: 2.3125em;
 	}
 	#main section {
 		display: -webkit-box;
@@ -725,3 +728,94 @@ body {
 	font-size: 2.5em;
 }
 /* End PAGE STYLES */
+
+/* HOMEPAGE STYLES */
+.home {
+	width: 100%;
+	background: url(img/Skillcrush_Computer.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.home .page-header {
+	display: none;
+}
+.home .content {
+	max-width: 600px;
+	background: #ffffff;
+	padding: 3em;
+}
+.home .main-content {
+	display: block;
+	width: 100%;
+	padding: 4em 0;
+}
+.home .content h1 {
+	font: 700 2.25em/1.5 'Montserrat', 'OpenSans', Arial, sans-serif;
+	margin: 0 0 1em;
+}
+.home .content p {
+	font: 1em/2 'OpenSans', Arial, sans-serif;
+	margin-bottom: 2em;
+}
+.home .content p a {
+	font-weight: 600;
+	text-decoration: underline;
+	color: #3b3b3b;
+}
+.home .content .social-btns {
+	margin-bottom: 1.875em;
+}
+.home .content .social-btns a {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	margin-right: .5em;
+}
+.home .content .soc-icon.tw {
+	background: url(img/twitter-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.fb {
+	background: url(img/facebook-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.ln {
+	background: url(img/linkedin-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.db {
+	background: url(img/dribbble-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.gh {
+	background: url(img/github-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .content .soc-icon.in {
+	background: url(img/instagram-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+.home .btn {
+	background: #45ac9d;
+	color: #fff;
+	font: 700 1.125em/3.5 'Montserrat', 'OpenSans', Arial, sans-serif;
+	display: inline-block;
+	height: 3.5em;
+	width: 100%;
+	padding: 0 1.25em;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+	.home .main-content {
+		float: right;
+	}
+	.home .content {
+		float: right;
+	}
+}
+/* End HOMEPAGE STYLES */
