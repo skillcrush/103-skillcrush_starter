@@ -1,8 +1,8 @@
 /*
-Theme Name: Skillcrush Starter Theme -- 00 Activate the Skillcrush Starter Theme Challenge
+Theme Name: Skillcrush Starter Theme -- 01 Header Footer Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
-Description: This theme is for use in Skillcrush 103, Skillcrush 203 and the Skillcrush WordPress Developer Career Blueprint.
+Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding FONTS, MAIN STYLES, and BODY STYLES to the style.css sheet.
 Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -77,3 +77,292 @@ table {
 /** end CSS reset **/
 
 /** theme styles start here! **/
+
+/* FONTS */
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/opensans-regular.eot');
+	src: url('fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/opensans-regular.woff') format('woff'),
+		url('fonts/opensans-regular.ttf') format('truetype');
+	font-weight: normal;
+		font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/opensans-bold.eot');
+	src: url('fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/opensans-bold.woff') format('woff'),
+		url('fonts/opensans-bold.ttf') format('truetype');
+	font-weight: bold;
+		font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/opensans-semibold.eot');
+	src: url('fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/opensans-semibold.woff') format('woff'),
+		url('fonts/opensans-semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/montserrat-regular.eot');
+	src: url('fonts/montserrat-regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/montserrat-regular.woff') format('woff'),
+		url('fonts/montserrat-regular.ttf') format('truetype');
+	font-weight: normal;
+		font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/montserrat-bold.eot');
+	src: url('fonts/montserrat-bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/montserrat-bold.woff') format('woff'),
+		url('fonts/montserrat-bold.ttf') format('truetype');
+	font-weight: bold;
+		font-weight: 700;
+	font-style: normal;
+}
+/* End FONTS */
+
+/* MAIN STYLES */
+header,
+footer,
+section,
+aside,
+time,
+article {
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+b,
+strong {
+	font-weight: bold;
+	font-weight: 700;
+}
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+p {
+	font-size: 16px;
+	font-size: 1em;
+	line-height: 1.75;
+	font-family: 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.01em;
+	margin: 1em auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 2em 0 .5em;
+	font: 700 1em/1.75 'Montserrat', 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.034em;
+}
+h1 {
+	font-size: 24px;
+	font-size: 1.5em;
+	line-height: 2.25;
+}
+h2 {
+	font-size: 20px;
+	font-size: 1.25em;
+	line-height: 2;
+}
+h3 {
+	font-size: 18px;
+	font-size: 1.125em;
+	line-height: 1.75;
+}
+ul {
+	list-style: disc;
+	margin: 1em 0 1em 1.125em;
+}
+blockquote {
+	margin: 2em;
+	padding: 0 1em;
+}
+blockquote p {
+	font: 1.6em/1.6 'Montserrat', 'OpenSans', Arial, sans-serif;
+}
+blockquote p:before {
+	content: '“';
+	font: 1.5em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
+	margin-left: -.6em;
+	padding-right: .25em;
+}
+blockquote p:after {
+	content: '”';
+	font: 1.5em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
+	margin-right: -1em;
+	padding-left: .25em;
+}
+blockquote footer {
+	font: 1.25em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
+}
+blockquote footer:before {
+	content: '—';
+}
+figure, img {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	width: 100%;
+}
+/* End MAIN STYLES */
+
+/* BODY STYLES */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	background: #fff;
+	border-top: 6px solid #45ac9d;
+	color: #3b3b3b;
+	font-size: 16px;
+	font-size: 1em;
+	line-height: 1.65;
+	font-family: 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.01em;
+}
+#page {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.page-header {
+	border-bottom: 1px solid #bfbfbf;
+	padding-bottom: 2.5em;
+	padding-top: 2.3125em;
+	overflow: hidden;
+}
+.page-header .top-logo {
+	color: inherit;
+	float: left;
+}
+.page-header .top-logo .title {
+	color: #45ac9d;
+	font: 700 1.88em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.034em;
+	display: block;
+	text-transform: uppercase;
+}
+.page-header .top-logo .sub-title {
+	color: inherit;
+	display: block;
+}
+.page-header .top-nav {
+	padding-top: 1.375em;
+	display: inline-block;
+	width: 100%;
+}
+.page-header .top-nav ul {
+	margin: 0;
+	background: #eeeeee;
+}
+.page-header .top-nav ul li a {
+	color: inherit;
+	font-size: .875em;
+	line-height: 2.75;
+	margin: 0 1em;
+	padding: .25em 0;
+	text-transform: uppercase;
+}
+.page-header .top-nav ul li:hover > a{
+	border-bottom: 1px solid #45ac9d;
+}
+.page-header .top-nav ul ul {
+	text-indent: 2em;
+	margin-bottom: 1em;
+}
+.main-content {
+	vertical-align: top;
+	padding: 2em 0 0 0;
+}
+#sidebar {
+	display: none;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+	.page-header .top-nav {
+		float: right;
+		display: block;
+		width: auto;
+		text-align: center;
+	}
+	.page-header .top-nav ul li {
+		display: block;
+		float: left;
+	}
+	.page-header .top-nav ul li:hover {
+		background: #eeeeee;
+	}
+	.page-header .top-nav ul ul {
+		display: block;
+		opacity: 0;							/* hide all sub menus from view but allow to ease in and out */
+		visibility: hidden;
+		position: absolute;
+		z-index: 9999;
+		-webkit-transition: all 0.5s ease;	/* so it will ease back out */
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		padding: 0.5em 0;
+		text-indent: 0;
+	}
+	.page-header .top-nav ul ul li {
+		float: none;
+		text-align: left;
+	}
+	.page-header .top-nav ul li:hover > ul {
+		opacity: 1;							/* display sub menus */
+		visibility: visible;
+		-webkit-transition: all 0.5s ease;	/* so it will ease in */
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		background: #eeeeee;
+	}
+	#main {
+		margin-bottom: 2.3125em;
+	}
+	#main section {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+	#sidebar {
+		display: block;
+		width: 31%;
+		min-width: 15em;
+		border-left: 1px solid #bfbfbf;
+		margin-left: 3em;
+	}
+}
+/* End BODY STYLES */
