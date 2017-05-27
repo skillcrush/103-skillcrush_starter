@@ -1,8 +1,8 @@
 /*
-Theme Name: Skillcrush Starter Theme -- 05 Newer / Older Posts Links Challenge
+Theme Name: Skillcrush Starter Theme -- 06 Single Blog Posts and Fix the Loop Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
-Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding next/prev navigation to the index.php file, adding NEXT / PREV STYLES to the style.css file.
+Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the category.php file from the previous "Fix the loop" challenge, adding the single.php and comments.php files, adding the "custom markup for post comments" function to the functions.php file, adding SINGLE POST STYLES to the style.css file.
 Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -604,3 +604,112 @@ body {
 	}
 }
 /* End NEXT / PREV STYLES */
+
+/* SINGLE POST STYLES */
+.single .post-entry {
+	border-bottom: none;
+}
+.author-name {
+	text-transform: capitalize;
+}
+.comments-area {
+	margin-bottom: 5em;
+	clear: both;
+	overflow: hidden;
+}
+.comments-area .comments-title {
+	border: solid #bfbfbf;
+	border-width: 1px 0;
+	color: #150300;
+	font: 600 .8em/3 'OpenSans', Arial, sans-serif;
+	height: 3em;
+	text-transform: uppercase;
+	margin: 1em 0;
+}
+.comment-list {
+	margin-bottom: 3.125em;
+}
+.comment-list .comment-head {
+	margin: 1.5em 0 .625em;
+}
+.comment-list .comment {
+	font: .8em/2.08 'OpenSans', Arial, sans-serif;
+	border-bottom: 1px solid #BFBFBF;
+	padding-bottom: 1.5em;
+}
+.comment-list .comment .comment-meta {
+	float: right;
+}
+.comment-list .comment a {
+	color: #45ac9d;
+	text-decoration: none;
+}
+.comment-list .comment a:hover {
+	text-decoration: underline;
+}
+.comment-list .comment .comment-author {
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.comments-area .comment-reply-title {
+	color: #45ac9d;
+	font: 700 1.176em/1.75 'Montserrat', 'OpenSans', Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 2em 0 1em;
+}
+.comments-area .comment-reply-title a {
+	color: #45ac9d;
+}
+.comments-area .comment-reply-title a:hover {
+	text-decoration: underline;
+}
+.comments-area .comment-form p {
+	font: .8em/2.08 'OpenSans', Arial, sans-serif;
+	margin: 0 auto 2em;
+}
+.comment-form-author {
+	width: 48%;
+	float: left;
+}
+.comment-form-email {
+	width: 48%;
+	float: right;
+}
+.comment-form-url {
+	display: none;
+}
+.comment-form input {
+	width: 100%;
+	line-height: 3em;
+	text-indent: 1em;
+	border: 1px solid #BFBFBF;
+}
+.comments-area .comment-form p a {
+	color: #45ac9d;
+}
+.comments-area .comment-form p a:hover {
+	text-decoration: underline;
+}
+.comments-area .comment-form label {
+	display: block;
+	font: 600 1em 'OpenSans', Arial, sans-serif;
+	margin: .625em 0;
+}
+.comments-area .comment-form textarea {
+	height: 11.25em;
+	width: 100%;
+	resize: none;
+	font: 1em/1.75 'OpenSans', Arial, sans-serif;
+	padding: .5em 1em;
+	border: 1px solid #BFBFBF;
+}
+.comments-area .comment-form input[type="submit"] {
+	background: #45ac9d;
+	width: 12.875em;
+	height: 3.5em;
+	font: 700 1.25em/2.5 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #fff;
+	margin: 1.5em 0;
+	float: right;
+}
+/* End SINGLE POST STYLES */
