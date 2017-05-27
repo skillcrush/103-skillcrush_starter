@@ -1,8 +1,8 @@
 /*
-Theme Name: Skillcrush Starter Theme -- 04 Template Tags Challenge
+Theme Name: Skillcrush Starter Theme -- 05 Newer / Older Posts Links Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
-Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding date, category, and author template tags to the content.php file.
+Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding next/prev navigation to the index.php file, adding NEXT / PREV STYLES to the style.css file.
 Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -545,3 +545,62 @@ body {
 	width: 15px;
 }
 /* End SIDEBAR STYLES */
+
+/* NEXT / PREV STYLES */
+#navigation {
+	background: #fff;
+	border: solid #bfbfbf;
+	border-width: 1px 0;
+	clear: both;
+	font: .8em/4.08 'OpenSans', Arial, sans-serif;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 5em;
+	text-align: center;
+}
+#navigation .left {
+	display: inline;
+	float: left;
+}
+#navigation .right {
+	display: inline;
+	float: right;
+}
+#navigation .left a,
+#navigation .right a {
+	color: #45ac9d;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#navigation .left a span,
+#navigation .right a span {
+	color: #150300;
+}
+#navigation .left a span {
+	padding-left: .5em;
+}
+#navigation .right a span {
+	padding-right: .5em;
+}
+#navigation .left a:hover,
+#navigation .right a:hover {
+	text-decoration: none;
+}
+#navigation .left a:hover span,
+#navigation .right a:hover span {
+	text-decoration: underline;
+}
+#navigation .pagination {
+	display: none;
+	color: #a6a6a6;
+}
+
+/* media queries */
+@media (min-width: 400px) {
+	#navigation .pagination {
+		display: inline;
+	}
+}
+/* End NEXT / PREV STYLES */
