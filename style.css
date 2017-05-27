@@ -1,8 +1,8 @@
 /*
-Theme Name: Skillcrush Starter Theme -- 01 Header Footer Challenge
+Theme Name: Skillcrush Starter Theme -- 02 Make a Blog Page Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
-Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding FONTS, MAIN STYLES, and BODY STYLES to the style.css sheet.
+Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the content.php file, revising the index.php file to call for the content partial instead of static content, adding BLOG STYLES to the style.css file.
 Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -64,16 +64,17 @@ table {
 }
 
 /** Clearfix **/
- .clearfix:before,
- .clearfix:after {
+.clearfix:before,
+.clearfix:after {
      content: " ";
      display: table;
-	 table-layout: fixed;
- }
+      table-layout: fixed;
+}
 
- .clearfix:after {
+.clearfix:after {
      clear: both;
- }
+}
+
 /** end CSS reset **/
 
 /** theme styles start here! **/
@@ -345,9 +346,6 @@ body {
 		transition: all 0.5s ease;
 		background: #eeeeee;
 	}
-	#main {
-		margin-bottom: 2.3125em;
-	}
 	#main section {
 		display: -webkit-box;
 		display: -moz-box;
@@ -366,3 +364,98 @@ body {
 	}
 }
 /* End BODY STYLES */
+
+/* BLOG STYLES */
+.post-entry {
+	border-bottom: 1px solid #bfbfbf;
+	padding-bottom: 1.875em;
+	margin-bottom: 1.875em;
+}
+.entry-title {
+	margin: 0.25em 0 1em;
+	font: 700 1.5em/1.5 'Montserrat', 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.034em;
+}
+.entry-title a {
+	color: inherit;
+	text-decoration: none;
+}
+.entry-title a:hover {
+	color: #45ac9d;
+}
+.entry-time {
+	color: #45ac9d;
+	font: 600 .82em/1.65 'OpenSans', Arial, sans-serif;
+}
+.category .page-title {
+	font: 700 1.5em/2 'Montserrat', 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.034em;
+	margin: 0;
+}
+.category .page-title span {
+	color: #45ac9d;
+}
+.entry-summary a {
+	color: #45ac9d;
+	text-decoration: underline;
+	font-weight: 600;
+}
+.entry-summary a:hover {
+	text-decoration: none;
+}
+.wp-caption {
+	display: inline;
+}
+.wp-caption img {
+	margin: 1em 0 0;
+}
+.wp-caption-text {
+	text-align: left;
+	font-style: italic;
+	font-size: .8em;
+	color: #a6a6a6;
+}
+.post-entry .read-more a{
+	font-size: 13px;
+	font-size: .8em;
+	font-family: 'OpenSans', Arial, sans-serif;
+	color: #45ac9d;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 1em;
+}
+.post-entry .read-more span {
+	color: #3b3b3b;
+}
+.post-entry .read-more a:hover {
+	border-bottom: 1px solid #45ac9d;
+}
+.entry-footer .entry-terms {
+	color: #a6a6a6;
+	font-size: .82em;
+}
+.entry-footer {
+	margin-top: 1.5em;
+}
+.entry-footer .entry-terms a {
+	color: #3b3b3b;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.entry-footer .entry-terms a:hover {
+	border-bottom: 1px solid #45ac9d;
+}
+.entry-terms span {
+	font-weight: normal;
+	color: #a6a6a6;
+}
+.entry-footer .entry-terms + .entry-terms:before {
+	content: '/';
+	padding: 0 .625em;
+}
+.main-content .post-entry:last-child {
+	border-bottom: 0;
+}
+/* End BLOG STYLES */
