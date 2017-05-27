@@ -82,3 +82,9 @@ function skillcrushstarter_comments($comment, $args, $depth) {
 
 	echo $comment;
 }
+
+// Changes excerpt symbol
+function custom_excerpt_more($more) {
+	return '...<div class="read-more"><a href="'. get_permalink() . '"><span>Read more</span> &raquo;</a></div>';
+}
+add_filter('excerpt_more', 'custom_excerpt_more');
