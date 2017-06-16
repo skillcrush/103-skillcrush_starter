@@ -46,9 +46,7 @@ function skillcrushstarter_setup() {
 }
 add_action( 'after_setup_theme', 'skillcrushstarter_setup' );
 
-/**
- * Enqueue scripts and styles.
- */
+// Enqueue scripts and styles
 function skillcrushstarter_scripts() {
 	wp_enqueue_style( 'skillcrushstarter-style', get_stylesheet_uri() );
 }
