@@ -354,6 +354,9 @@ body {
 		flex-flow: row nowrap;
 		justify-content: space-between;
 	}
+	.main-content {
+		flex-grow: 1;
+	}
 	#sidebar {
 		display: block;
 		width: 31%;
