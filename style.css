@@ -66,13 +66,13 @@ table {
 /** Clearfix **/
 .clearfix:before,
 .clearfix:after {
-     content: " ";
-     display: table;
-      table-layout: fixed;
+	content: " ";
+	display: table;
+	table-layout: fixed;
 }
 
 .clearfix:after {
-     clear: both;
+	clear: both;
 }
 /** end CSS reset **/
 
@@ -186,6 +186,15 @@ h3 {
 	font-size: 1.125em;
 	line-height: 1.75;
 }
+h4 {
+	font-size: 16px;
+    font-size: 1em;
+}
+ h5 {
+	 font-size: 16px;
+	 font-size: 1em;
+	 text-transform: uppercase;
+}
 ul {
 	list-style: disc;
 	margin: 1em 0 1em 1.125em;
@@ -216,11 +225,35 @@ blockquote footer:before {
 	content: '—';
 }
 figure, img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 iframe {
 	width: 100%;
+}
+input {
+	font: 1em 'OpenSans', Arial, sans-serif;
+	line-height: 2;
+	height: 2.3125em;
+	border: 1px solid #BFBFBF;
+	margin: 0;
+	padding: 0.3em 0.625em;
+	background: #fff;
+	vertical-align: middle;
+}
+input[type="button"],
+input[type="submit"] {
+	font: 700 1.125em/3.5 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #fff;
+	background: #45ac9d;
+	border: none;
+	padding: 0 2em;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
 }
 /* End MAIN STYLES */
 
@@ -296,6 +329,9 @@ body {
 	text-indent: 2em;
 	margin-bottom: 1em;
 }
+#main {
+	margin-bottom: 2.3125em;
+}
 .main-content {
 	vertical-align: top;
 	padding: 2em 0 0 0;
@@ -345,9 +381,6 @@ body {
 		transition: all 0.5s ease;
 		background: #eeeeee;
 	}
-	#main {
-		margin-bottom: 2.3125em;
-	}
 	#main section {
 		display: -webkit-box;
 		display: -moz-box;
@@ -356,6 +389,9 @@ body {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
+	}
+	.main-content {
+		flex-grow: 1;
 	}
 	#sidebar {
 		display: block;
@@ -515,10 +551,12 @@ body {
 	border-bottom: 1px solid #a6a6a6;
 	border-right: 1px solid #a6a6a6;
 	border-left: none;
-	height: 3.3em;
+	font: .875em/1.75em 'Open Sans', Arial, sans-serif;
+	height: 2.6em;
 	background: url('img/white-arrow-right.png') no-repeat center #45ac9d;
 	color: #ffffff;
 	margin-left: -5px;
+	padding: 0;
 	vertical-align: middle;
 }
 #sidebar .widget_categories h2,
