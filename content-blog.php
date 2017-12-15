@@ -14,7 +14,7 @@
 	<div class="entry-wrap">
 		<header class="entry-header">
 			<div class="entry-meta">
-				<h3 class="entry-time"><?php echo get_the_date(); ?></h3>
+				<time class="entry-time"><?php echo get_the_date(); ?></time>
 			</div>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		</header>
@@ -24,7 +24,7 @@
 					<?php the_post_thumbnail('full'); ?>
 				</figure>
 			<?php endif; ?>
-			<?php the_excerpt(); ?> 
+			<?php the_excerpt(); ?>
 		</div>
 		<footer class="entry-footer">
 			<div class="entry-meta">
