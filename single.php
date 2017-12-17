@@ -20,8 +20,8 @@ get_header(); ?>
 	<?php get_sidebar(); ?>
 </section>
 
-<div id="navigation" class="container">
+<nav id="navigation" class="container">
 	<div class="left"><a href="<?php echo site_url('/blog/') ?>">&larr; <span>Back to posts</span></a></div>
-</div>
+</nav>
 
 <?php get_footer(); ?>
