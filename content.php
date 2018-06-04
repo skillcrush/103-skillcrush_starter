@@ -14,7 +14,7 @@
 	<div class="entry-wrap">
 		<header class="entry-header">
 			<div class="entry-meta">
-				<h3 class="entry-time"><?php echo get_the_date(); ?></h3>
+				<time class="entry-time"><?php echo get_the_date(); ?></time>
 			</div>
 			<h2 class="entry-title"><?php the_title(); ?></h2>		<!-- Removed the call for the permalink once we swapped content-blog for content in index.php -->
 		</header>
