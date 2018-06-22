@@ -16,12 +16,12 @@ get_header(); ?>
 				<h1><?php the_title(); ?></h1>
 				<?php the_content(); ?>
 				<div class="social-btns">  <!-- populate or remove as many of these as you want -->
-					<a href="" class="soc-icon tw"></a>
-					<a href="" class="soc-icon fb"></a>
-					<a href="" class="soc-icon ln"></a>
-					<a href="" class="soc-icon db"></a>
-					<a href="" class="soc-icon gh"></a>
-					<a href="" class="soc-icon in"></a>
+					<a href="" class="soc-icon tw"><span class="screen-reader-text">Twitter</span></a>
+					<a href="" class="soc-icon fb"><span class="screen-reader-text">Facebook</span></a>
+					<a href="" class="soc-icon ln"><span class="screen-reader-text">LinkedIn</span></a>
+					<a href="" class="soc-icon db"><span class="screen-reader-text">Dribble</span></a>
+					<a href="" class="soc-icon gh"><span class="screen-reader-text">GitHub</span></a>
+					<a href="" class="soc-icon in"><span class="screen-reader-text">Instagram</span></a>
 				</div>
 				<a href="<?php echo site_url('/blog/'); ?>" class="btn">View My Blog</a>
 			<?php endwhile; ?>
