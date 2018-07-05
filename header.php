@@ -16,6 +16,15 @@
 	<meta name="description" content="A WordPress portfolio project site, built with Skillcrush.">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<?php
+		global $is_IE;
+		if( $is_IE )  : ?>
+			<style>
+			    .main-content img {
+			         width: 100%;
+			    }
+			</style>
+	<?php endif; ?>
 
 	<?php wp_head(); ?>
 </head>
