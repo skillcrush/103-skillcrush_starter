@@ -265,11 +265,6 @@ body {
 	margin: 0;
 }
 body {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
 	background: #fff;
 	border-top: 6px solid #45ac9d;
 	color: #3b3b3b;
