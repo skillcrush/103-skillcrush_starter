@@ -495,86 +495,81 @@ body {
 
 /* SIDEBAR STYLES */
 #sidebar {
-	padding-top: 1.25em;
+  padding-top: 1.25em;
 }
+
 #sidebar ul {
-	margin: 0;
+  margin: 0;
 }
+
 #sidebar li {
-	list-style-type: none;
+  list-style-type: none;
 }
+
 #sidebar .widget {
-	padding: 1.75em 1.8em 0;
+  padding: 1.75em 1.8em 0;
 }
+
 #sidebar .widget:last-of-type {
-	padding-bottom: 1.75em;
+  padding-bottom: 1.75em;
 }
+
 #sidebar .widget_text {
-	border-bottom: 1px solid #BFBFBF;
-	padding: 1.75em 1.8em;
+  border-bottom: 1px solid #BFBFBF;
+  padding: 1.75em 1.8em;
 }
-#sidebar .widget_text img {
-	max-width: 175px;
-	margin: auto;
-	display: block;
-	border-radius: 50%; /* style not defined by the challenge code but an option to match image to site design */
+
+#sidebar .widget_media_image img {
+  max-width: 175px;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  /* style not defined by the challenge code but an option to match image to site design */
 }
-#sidebar .widget_text a {
-	color: #3b3b3b;
-	font-weight: 700;
-	text-decoration: underline;
+
+#sidebar a {
+  color: #3b3b3b;
+  font-weight: 700;
+  text-decoration: underline;
 }
+
 #sidebar .widget_search {
-	border-bottom: 1px solid #BFBFBF;
-	padding: 1.75em 1.8em;
+  border-bottom: 1px solid #BFBFBF;
+  padding: 1.75em 1.8em;
 }
-#sidebar .widget_search input[type="text"] {
-	width: 79%;
-	font: .875em/1.75em 'OpenSans', Arial, sans-serif;
-	font-style: italic;
-	border-top: 1px solid #a6a6a6;
-	border-bottom: 1px solid #a6a6a6;
-	border-left: 1px solid #a6a6a6;
-	border-right: none;
-	height: 2.6em;
-	padding: .5em;
-	vertical-align: middle;
+
+#sidebar .widget_search input[type="search"] {
+  width: 79%;
+  font: .875em/1.75em 'OpenSans', Arial, sans-serif;
+  font-style: italic;
+  border-top: 1px solid #a6a6a6;
+  border-bottom: 1px solid #a6a6a6;
+  border-left: 1px solid #a6a6a6;
+  border-right: none;
+  height: 2.6em;
+  padding: .5em;
+  vertical-align: middle;
 }
-#sidebar .widget_search input[type="submit"] {
-	width: 13%;
-	border-top: 1px solid #a6a6a6;
-	border-bottom: 1px solid #a6a6a6;
-	border-right: 1px solid #a6a6a6;
-	border-left: none;
-	font: .875em/1.75em 'Open Sans', Arial, sans-serif;
-	height: 2.6em;
-	background: url('img/white-arrow-right.png') no-repeat center #45ac9d;
-	color: #ffffff;
-	margin-left: -5px;
-	padding: 0;
-	vertical-align: middle;
+
+#sidebar .widget_search button[type="submit"] {
+  width: 13%;
+  border-top: 1px solid #a6a6a6;
+  border-bottom: 1px solid #a6a6a6;
+  border-right: 1px solid #a6a6a6;
+  border-left: none;
+  font: .875em/1.75em 'Open Sans', Arial, sans-serif;
+  height: 2.6em;
+  background: url('img/white-arrow-right.png') no-repeat center #45ac9d;
+  color: #ffffff;
+  margin-left: -5px;
+  padding: 0;
+  vertical-align: middle;
 }
-#sidebar .widget_categories h2,
-#sidebar .widget_archive h2 {
-	font: 700 .875em/1.75 'OpenSans', Arial, sans-serif;
-	color: #45ac9d;
-	margin: 0 auto 1.25em;
+
+#sidebar h2 {
+  font: 700 .875em/1.75 'OpenSans', Arial, sans-serif;
+  color: #45ac9d;
+  margin: 0 auto 1.25em;
 }
-#sidebar .widget_categories ul li,
-#sidebar .widget_archive ul li {
-	font: 600 .875em/1.5 'OpenSans', Arial, sans-serif;
-	color: #3b3b3b;
-	margin-bottom: 1em;
-}
-#sidebar .widget_categories ul li a,
-#sidebar .widget_archive ul li a {
-	color: #3b3b3b;
-}
-#sidebar .wpp-excerpt {
-	font-size: .75em;
-	font-weight: normal;
-}
-#sidebar .wpp-thumbnail {
-	width: 15px;
-}
+
 /* End SIDEBAR STYLES */
