@@ -1,5 +1,5 @@
 /*
-Theme Name: Skillcrush Starter Theme -- 06 Single Blog Posts and Fix the Loop Challenge
+Theme Name: check Skillcrush Starter Theme -- 06 Single Blog Posts and Fix the Loop Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
 Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the category.php file from the previous "Fix the loop" challenge, adding the single.php and comments.php files, adding the "custom markup for post comments" function to the functions.php file, adding SINGLE POST STYLES to the style.css file.
@@ -580,7 +580,7 @@ body {
 }
 
 .entry-summary a {
-  color: #41A495;
+  color: #348377;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -911,7 +911,7 @@ body {
 }
 
 .comments-area .comment-form p a {
-  color: #41A495;
+  color: #348377;
 }
 
 .comments-area .comment-form p a:hover {
