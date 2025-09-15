@@ -1,5 +1,5 @@
 /*
-Theme Name: Skillcrush Starter Theme -- 04 Template Tags Challenge
+Theme Name: check Skillcrush Starter Theme -- 04 Template Tags Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
 Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding date, category, and author template tags to the content.php file.
@@ -580,7 +580,7 @@ body {
 }
 
 .entry-summary a {
-  color: #41A495;
+  color: #348377;
   text-decoration: underline;
   font-weight: 600;
 }
