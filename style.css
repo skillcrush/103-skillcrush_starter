@@ -1,5 +1,5 @@
 /*
-Theme Name: check Skillcrush Starter Theme -- 07 Pages Challenge
+Theme Name: Skillcrush Starter Theme -- 07 Pages Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
 Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the page.php file and an optional full-width.php file (inside a custom-template folder), adding PAGE STYLES and CUSTOM TEMPLATE STYLES  to style.css file.
@@ -960,5 +960,6 @@ body {
 .page-template-full-width .entry-title {
   font-size: 2.5em;
 }
+
 
 /* End PAGE STYLES */
