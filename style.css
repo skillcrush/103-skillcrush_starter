@@ -1,5 +1,5 @@
 /*
-Theme Name: check Skillcrush Starter Theme -- 02 Make a Blog Page Challenge
+Theme Name: Skillcrush Starter Theme -- 02 Make a Blog Page Challenge
 Author: The Skillcrush Team
 Author URI: http://skillcrush.com
 Description: This theme is for use in Skillcrush 103. Revisions since the last version include: adding the content.php file, revising the index.php file to call for the content partial instead of static content, adding BLOG STYLES to the style.css file.
@@ -656,5 +656,6 @@ body {
 .main-content .post-entry:last-child {
   border-bottom: 0;
 }
+
 
 /* End BLOG STYLES */
